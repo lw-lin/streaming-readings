@@ -13,7 +13,7 @@
 - [Drizzle: Fast and Adaptable Stream Processing at Scale](http://shivaram.org/drafts/drizzle.pdf) (Draft): Record-at-a-time 的系统，如 Naiad, Flink，处理延迟较低、但恢复延迟较高；micro-batch 系统，如 Spark Streaming，恢复延迟低但处理延迟略高。Drizzle 则采用 group scheduling + pre-scheduling shuffles 的方式对 Spark Streaming 做了改进，保留低恢复延迟的同时，降低了处理延迟至 100ms 量级。
 
 
-- [Realtime Data Processing at Facebook](https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xpt1/t39.2365-6/13331599_975087972607457_1796386216_n/Realtime_Data_Processing_at_Facebook.pdf) (SIGMOD): Facebook 明确自己实时的使用场景是 seconds of latency, not milliseconds，并基于自己的需求构建了 3 个实时处理组件：Puma, Swift, 以及 Stylus。Puma, Swift 和 Stylus 都从 Scribe 读数据，并可向 Scribe 写回数据（Scribe 是 Facebook 内部的分布式消息系统，类似 Kafka）。
+- [Realtime Data Processing at Facebook](https://research.fb.com/wp-content/uploads/2016/11/realtime_data_processing_at_facebook.pdf) (SIGMOD): Facebook 明确自己实时的使用场景是 seconds of latency, not milliseconds，并基于自己的需求构建了 3 个实时处理组件：Puma, Swift, 以及 Stylus。Puma, Swift 和 Stylus 都从 Scribe 读数据，并可向 Scribe 写回数据（Scribe 是 Facebook 内部的分布式消息系统，类似 Kafka）。
 
 
 ## 2015 年
