@@ -15,6 +15,8 @@
 
 - [Realtime Data Processing at Facebook](https://research.fb.com/wp-content/uploads/2016/11/realtime_data_processing_at_facebook.pdf) (SIGMOD): Facebook 明确自己实时的使用场景是 seconds of latency, not milliseconds，并基于自己的需求构建了 3 个实时处理组件：Puma, Swift, 以及 Stylus。Puma, Swift 和 Stylus 都从 Scribe 读数据，并可向 Scribe 写回数据（Scribe 是 Facebook 内部的分布式消息系统，类似 Kafka）。
 
+- [Tyler Akidau: The world beyond batch: Streaming 102](https://www.oreilly.com/ideas/the-world-beyond-batch-streaming-102) 来自Google的Tyler Akidau关于流式、实时计算阐述的第2篇文章。详细介绍了在处理无界数据时重要的附加概念，并使用具体的示例深入地解释。
+
 
 ## 2015 年
 
@@ -29,6 +31,9 @@
 
 
 - [Twitter Heron: Stream Processing at Scale](https://pdfs.semanticscholar.org/e847/c3ec130da57328db79a7fea794b07dbccdd9.pdf) (SIGMOD): Heron 是 Twitter 开发的用于代替 Storm 的实时处理系统，解决了 Storm 在扩展性、调试能力、性能、管理方式上的一些问题。Heron 实现了 Storm 的接口，因此对 Storm 有很好的兼容性，也成为了 Twitter 内部实时处理系统的事实上的标准。
+
+
+- [Tyler Akidau: The world beyond batch: Streaming 101](https://www.oreilly.com/ideas/the-world-beyond-batch-streaming-101) 来自Google的Tyler Akidau关于流式、实时计算阐述的第1篇文章。主要深入介绍了EventTime，Processing Time，Window，trriger、Watermark、accumulation等一些流式计算的基本背景知识和术语，非常好的流式计算入门文章。
 
 
 ## 2014 年
